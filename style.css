@@ -1,0 +1,222 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* min-width: 320px; */
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.header {
+    width: 100%;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.conteiner {
+    width: calc(100%-40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__conteiner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.logo {
+    background-image: url(./assets/svg/logo.svg);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+}
+
+.nav-item {
+    padding: 0 20px;
+}
+
+
+.link {
+    color: #fff;
+    height: fit-content;
+    font-size: 20px;
+    line-height: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+
+
+.main {
+    height: calc(100vh - 120px);
+}
+
+.main__conteiner  {
+    background-image: url(./assets/img/solovey.jpg);
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    min-height: 280px;
+    
+}
+
+.photo {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 4%;
+    left: 6%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 3s;
+}
+
+
+
+.after {
+    top: 34%;
+    width: 160px;
+    height: 160px;
+}
+
+.none {
+    display: none;
+    }
+
+.photo img {
+    max-width: 100%;
+    display: block;
+}
+
+.footer {
+    background-color: #000;
+      
+}
+
+.footer-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+.footer-data {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.copy {
+    padding-right: 20px;
+    color: #fff;
+}
+
+.github {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: .3s;
+}
+
+.github:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.rs {
+
+    width: 135px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./assets/svg/rss.svg);
+    transition: .3s;
+}
+
+.rs:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.play-btn {
+    background-image: url(./assets/svg/play.svg);
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    filter: brightness(.85);
+}
+
+.pause {
+    background-image: url(./assets/svg/pause.svg);
+}
+
+.main__conteiner.drozd {
+    background-image: url(./assets/img/drozd.jpg);
+}
+
+.main__conteiner.javoronok {
+    background-image: url(./assets/img/javoronok.jpg);
+}
+
+.main__conteiner.slavka {
+    background-image: url(./assets/img/slavka.jpg);
+}
+
+.main__conteiner.solovey {
+    background-image: url(./assets/img/solovey.jpg);
+}
+
+.main__conteiner.zarynka {
+    background-image: url(./assets/img/zarynka.jpg);
+}
+
+
